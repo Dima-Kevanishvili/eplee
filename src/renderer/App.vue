@@ -110,7 +110,7 @@ color: inherit !important;
 }
 .highContrast{
   background: #000;
-  color:#eee;
+  color:#fff;
 }
 
 </style>

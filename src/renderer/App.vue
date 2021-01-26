@@ -108,5 +108,9 @@ color: inherit !important;
   background: #fdf6e3;
   color: #002b36;
 }
+.highContrast{
+  background: #000;
+  color:#eee;
+}
 
 </style>

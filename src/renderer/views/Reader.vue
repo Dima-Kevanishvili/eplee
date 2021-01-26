@@ -50,7 +50,7 @@ import BookmarkMenu from '../components/Reader/BookmarkMenu';
 import SearchMenu from '../components/Reader/SearchMenu';
 import ThemeMenu from '../components/Reader/ThemeMenu';
 import BubleMenu from '../components/Reader/BubleMenu';
-import { dark, tan } from '../../shared/themes';
+import { dark, tan, highContrast } from '../../shared/themes';
 import { selectListener, clickListener, swipListener, wheelListener, keyListener } from '../components/Reader/listener/listener';
 
 export default {
@@ -143,6 +143,7 @@ export default {
         this.rendition.display(this.info.lastCfi || 1);
         this.rendition.themes.registerRules('dark',dark);
         this.rendition.themes.registerRules('tan', tan);
+        this.rendition.themes.registerRules('highContrast',highContrast)
         this.rendition.ready = true;
         this.theme = this.$store.getters.theme;
         this.applytheme(this.theme);

@@ -29,6 +29,9 @@
 						<el-radio-button label="dark" border>
 							Dark
 						</el-radio-button>
+						<el-radio-button label="highContrast" border>
+							High Contrast
+						</el-radio-button>
 					</el-radio-group>
 				</td>   
 			</tr>
@@ -86,6 +89,7 @@ export default {
 			this.updateStyle();
 		},
 		theme(theme){
+			console.log("theme", theme)
       this.$emit('theme-change', theme);			
 		},
 		flow(value){

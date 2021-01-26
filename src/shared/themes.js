@@ -40,5 +40,15 @@ const tan = {
     background: 'rgba(0, 0, 0, 0.1) !important',
   },
 };
+const highContrast = {
+  body: {
+    background: `#000 !important`,
+    color: `#fff !important`,
+  },
+  '*': {
+    color: 'inherit !important',
+    background: 'inherit !important',
+  },
+};
 
-export { dark, light, tan };
+export { dark, light, tan, highContrast };
